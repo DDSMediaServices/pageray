@@ -1,0 +1,97 @@
+# Privacy Policy — PageRay
+
+**Effective date:** May 6, 2026
+**Extension:** PageRay – Instant Landing Page Auditor
+**Developer:** DDS Media Service
+**Contact:** kenneth.ngai@ddsmediaservices.com
+
+---
+
+## Overview
+
+PageRay is a Chrome browser extension that audits the webpage you are currently viewing and displays a report covering SEO signals, AI search readiness, marketing pixel and tag detection, and page load performance.
+
+**All analysis is performed locally inside your browser. PageRay does not collect, transmit, store remotely, or share any data about you or the pages you visit.**
+
+---
+
+## 1. Data We Do NOT Collect
+
+PageRay does not collect, record, or transmit any of the following:
+
+- Your browsing history or visited URLs
+- The content of any webpage you audit
+- Personal identification information of any kind
+- IP addresses or device identifiers
+- Cookies or session tokens from pages you visit
+- Audit results, SEO scores, or pixel detection results
+- Any information about your Chrome profile or account
+
+---
+
+## 2. Data Stored Locally on Your Device
+
+PageRay stores one item locally on your device using `chrome.storage.local`:
+
+| Key | Type | Purpose |
+|---|---|---|
+| `pagerayRunCount` | Integer | Counts how many audits you have run in order to determine when to display a periodic prompt offering a free consultation. |
+
+This data:
+
+- Never leaves your device
+- Is never transmitted to any server
+- Is not linked to your identity
+- Can be cleared at any time by removing the extension
+
+No audit results, page content, URLs, or personal data are ever written to storage.
+
+---
+
+## 3. Permissions and Why They Are Needed
+
+### `activeTab`
+Used solely to identify the tab you are currently viewing so the extension can run an audit on that specific page when you open the popup or click "Run Again". No other tabs are accessed.
+
+### `scripting`
+Used solely to inject the audit script into the active tab at the moment you trigger a scan. The script reads publicly available browser APIs (Performance API, DOM) on the page you chose to audit. It is never injected passively or in the background.
+
+### `storage`
+Used solely to persist the run count integer described in Section 2. No personal data is stored.
+
+### `host_permissions` (`<all_urls>`)
+Required because PageRay is designed to work on any webpage — including custom domains, staging environments, intranets, and e-commerce stores. This permission allows the audit script to be injected into whichever page you choose to inspect. It is not used to monitor, scrape, or access any page in the background.
+
+---
+
+## 4. Third-Party Services
+
+PageRay does not integrate with, communicate with, or send data to any third-party analytics service, advertising network, or data broker.
+
+The popup contains a link to a Calendly booking page (https://calendly.com/ddsmediaservices/free-consultation) and a link to the DDS Media Service website. These links only open if you click them. Clicking an external link is subject to that website's own privacy policy. PageRay itself transmits nothing to those services.
+
+---
+
+## 5. Children's Privacy
+
+PageRay is a developer and marketing tool intended for adult professionals. It does not knowingly collect any information from children under the age of 13.
+
+---
+
+## 6. Changes to This Policy
+
+If this privacy policy is updated, the revised version will be published at the same URL with an updated effective date. Continued use of the extension after any change constitutes acceptance of the revised policy.
+
+---
+
+## 7. Contact
+
+If you have any questions about this privacy policy, please contact:
+
+**DDS Media Service**
+Email: kenneth.ngai@ddsmediaservices.com
+Website: https://www.ddsmediaservices.com/
+
+---
+
+*PageRay processes everything locally in your browser. Your data is yours.*
